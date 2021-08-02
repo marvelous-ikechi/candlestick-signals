@@ -1,0 +1,60 @@
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 65.3%;
+    display: grid;
+    place-items: center;
+}
+
+.container{
+    width: 80rem;
+    height: 50rem;
+    align-items: center;
+    /*border-width: 2px;*/
+    /*border-color: black;*/
+    /*border-style: solid;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*align-items: center;*/
+    height: 20rem;
+    width: 30rem;
+    margin-top: 2rem;
+}
+
+button{
+    height: 4rem;
+    width: 8rem;
+    margin-right: 0.5rem;
+}
+
+label{
+    font-size: 1rem;
+}
+
+.resources-label::after{
+    content: ' (R)';
+    font-weight: bold;
+    color: black;
+}
+
+.submit-btn{
+    width: 7rem;
+    height: 3rem;
+}
+
+.resources-option{
+    width: 3rem;
+}

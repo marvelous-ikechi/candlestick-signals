@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+<div class="container">
+    <div class="form">
+        <h1>Choose Preferred Service</h1>
+        <div>
+            <input type="radio" id="aws_lambda" name="service" value="AWS">
+            <label for="aws_lambda">AWS Lambda</label>
+        </div>
+        <div>
+            <input type="radio" id="ec2" name="service" value="EC2">
+            <label for="ec2">EC2</label>
+        </div>
+        <div>
+            <button>Kickstart resource</button>
+            <button>Terminate resource</button>
+        </div>
+        <div>
+            <label for="resources" class="resources-label">Number of Resources</label>
+            <select id="resources" name="resources" class="resources-option">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+        </div>
+        <div>
+            <label for="shots">Number of shots</label>
+            <input type="number" class="shots">
+        </div>
+        <div>
+            <label>Length of price history</label>
+            <input type="number" class="history">
+        </div>
+        <div>
+            <label>Buy or sell</label>
+            <select>
+                <option>Buy</option>
+                <option>Sell</option>
+            </select>
+        </div>
+        <input type="submit" value="Submit" class="submit-btn">
+    </div>
+</div>
+</body>
+</html>
