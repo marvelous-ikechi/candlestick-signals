@@ -20,7 +20,7 @@
 # https://cloud.google.com/appengine/docs/flexible/python/configuring-your-app-with-app-yaml
 #
 
-  runtime: custom
+  runtime: python
   env: flex
   entrypoint: gunicorn -b :$PORT mysite.wsgi
   runtime_config:
